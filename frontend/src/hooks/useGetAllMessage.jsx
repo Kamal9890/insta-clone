@@ -12,7 +12,7 @@
                                     useEffect(() => {
                                         const fetchAllMessage = async () => {
                                             try {
-                                    const res = await axios.get(`http://localhost:8000/api/v1/message/all/${selectedUser?._id}`,{withCredentials:true});
+                                    const res = await axios.get(`https://insta-clone-sbah.onrender.com/api/v1/message/all/${selectedUser?._id}`,{withCredentials:true});
                                 if (res.data.success) {  
                                                     dispatch(setMessages(res.data.messages));
                                                 }
